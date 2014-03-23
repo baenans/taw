@@ -15,6 +15,9 @@ STATICFILES_DIRS = (
     '/'.join([BASE_DIR, 'static']),
 )
 
+import socket
+ON_SERVER = socket.gethostname().startswith('box679')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/

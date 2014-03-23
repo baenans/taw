@@ -1,27 +1,35 @@
 from django.shortcuts import render
-
+from django.conf import settings
 # Create your views here.
 
 def home(request):
-	return render(request, 'home.htm', {})
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'home.htm', context)
 
 def team(request):
-	return render(request, 'team.htm', {})
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'team.htm', context)
 
 def login_view(request):
-	return render(request, 'login.htm', {})	
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'login.htm', context)	
 
 def user(request):
-	return render(request, 'user_area.htm', {})	
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'user_area.htm', context)	
 
 def user_edit(request):
-	return render(request, 'user_edit.htm', {})	
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'user_edit.htm', context)	
 
 def citas(request):
-	return render(request, 'citas.htm', {})
-	
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'citas.htm', context)
+
 def citas_ask(request):
-	return render(request, 'citas_ask.htm', {})	
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'citas_ask.htm', context)	
 
 def tratamientos(request):
-	return render(request, 'tratamientos.htm', {})	
+	context = {'ON_SERVER':settings.ON_SERVER}
+	return render(request, 'tratamientos.htm', context)	

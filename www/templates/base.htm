@@ -3,9 +3,13 @@
 <html>
 <head>
   <title>Diagon</title>
-
   <!-- Bootstrap core CSS -->
-  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  {% if ON_SERVER %}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  {% else %}
+     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  {% endif %}
+ 
   <style type="text/css">
   .red{
     color: red;
@@ -20,9 +24,6 @@
     min-height:600px;
   }
   </style>
-  <!-- IF PRODUCTION 
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
--->
 </head>
 <body>
 <!-- <div class="jumbotron" style="margin-bottom:0px">
@@ -62,10 +63,16 @@
 
 {% block content %}{% endblock %}
 <!-- Latest compiled and minified JavaScript 
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
 -->
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+  {% if ON_SERVER %}
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  {% else %}
+     <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  {% endif %}
+
 </body>
 </html>
