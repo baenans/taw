@@ -1,0 +1,33 @@
+{% extends 'base.htm'%}
+
+{% block content %}
+<ol class="breadcrumb" style="margin-top:0px; margin-bottom:40px">
+  <li><a href="{% url 'home' %}">Inicio</a></li>
+  <li>Equipo Médico</li>
+</ol>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+		 <div class="thumbnail">
+		      <img data-src="holder.js/300x200" alt="...">
+		      <div class="caption">
+		        <h3>Dr. Gregory House</h3>
+		        <p>Medical Research</p>
+		      </div>
+		    </div>
+		</div>
+				<div class="col-md-3">
+		 <div class="thumbnail">
+		      <img data-src="holder.js/300x200" alt="...">
+		      <div class="caption">
+		        <h3>Dra. Cuddie</h3>
+		        <p>Hospital Manager</p>
+		      </div>
+		    </div>
+		</div>
+
+	</div>
+</div>
+    
+{% endblock %}

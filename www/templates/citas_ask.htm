@@ -1,0 +1,72 @@
+{% extends 'user_base.htm'%}
+{% block user_breadcrumb %}
+<li><a href="{% url 'user' %}">Área de Usuario</a></li>
+<li>Pedir cita</li>
+{% endblock %}
+{% block user_content %}
+<h3 style="margin-top:0px">Pedir Cita</h3>
+<ul class="pager" style="margin-top:0px">
+  <li class="previous disabled"><a href="#">&larr; Anterior</a></li>
+  <li class="next"><a href="#">Siguiente &rarr;</a></li>
+</ul>
+<div class="container-fluid">
+<table class="table table-bordered" style="text-align:center !important;">
+<tr>
+<th ></th>
+<th style="text-align:center !important; width:18%">Lunes</th>
+<th style="text-align:center !important; width:18%">Martes</th>
+<th style="text-align:center !important; width:18%">Miércoles</th>
+<th style="text-align:center !important; width:18%">Jueves</th>
+<th style="text-align:center !important; width:18%">Viernes</th>
+</tr>
+<td>8:45h</td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+</tr>
+</tr>
+<td>9:45h</td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+</tr>
+</tr>
+<td>10:45h</td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+</tr>
+</tr>
+<td>11:45h</td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+</tr>
+</tr>
+<td>12:45h</td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+</tr>
+</tr>
+<td>13:45h</td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-check green"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+<td><span class="glyphicon glyphicon-lock red"></span></td>
+</tr>
+</table>
+
+</div>
+  {% endblock %}

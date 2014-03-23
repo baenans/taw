@@ -1,0 +1,19 @@
+{% extends 'user_base.htm'%}
+{% block user_breadcrumb %}
+<li><a href="{% url 'user' %}">Área de Usuario</a></li>
+<li>Consultar mis tratamientos</li>
+{% endblock %}
+{% block user_content %}
+<h3 style="margin-top:0px">Tratamientos</h3>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">Tratamientos activos</a></li>
+    <li><a href="#">Tratamientos anteriores</a></li>
+  </ul>
+  <table class="table">
+    <tr><th>Día</th><th>Hora</th><th>Doctor</th><th>Consulta</th></tr>
+    <tr><td>Lunes 7 de Abril</td><td>10:30h</td><td>Dr. Francisco Zamudio</td><td>24</td></tr>
+    <tr><td>Lunes 7 de Abril</td><td>10:30h</td><td>Dr. Francisco Zamudio</td><td>24</td></tr>
+    <tr><td>Lunes 7 de Abril</td><td>10:30h</td><td>Dr. Francisco Zamudio</td><td>24</td></tr>
+
+  </table>
+  {% endblock %}

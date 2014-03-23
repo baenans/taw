@@ -1,0 +1,25 @@
+
+    aside {
+      padding: 10%;
+      
+    }
+    .menuder{
+      position: fixed;
+      top: 10%;
+      margin-top:10%;
+      background-color:#C2EDE8;
+	    border: 1px solid black;
+	    margin-left:5%;	        
+    }
+
+    aside button{
+    	margin: 10px 0 10px 0;
+    }
+
+
+    #mapa{
+      position:relative;
+      height:300px;
+      width:100%;
+     
+    }

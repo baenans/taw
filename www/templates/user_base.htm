@@ -1,0 +1,41 @@
+{% extends 'base.htm'%}
+{% block content %}
+<ol class="breadcrumb" style="margin-top:0px; margin-bottom:40px">
+  <li><a href="{% url 'home' %}">Inicio</a></li>
+  {% block user_breadcrumb %}<li>Área de Usuario</li>{% endblock %}
+</ol>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-3 col-xs-4">
+    <ul class="nav nav-stacked"><!-- data-spy="affix" data-offset-top="90" data-offset-bottom="0">-->
+      <li class="disabled"><h4>Su área personal</h4></li>
+      <li class="active"><a href="{% url 'user' %}">Área de Usuario</a></li>
+      <li><a href="{% url 'user_edit' %}">Modificar mis datos</a></li>
+      <li><a href="{% url 'citas' %}">Consultar mis citas<span class="badge warning pull-right">2</span></a></li>
+      <li><a href="{% url 'tratamientos' %}">Consultar mis tratamientos</a></li>
+      <li><a href="{% url 'citas_ask' %}">Pedir cita</a></li>
+      <li class="disabled"><h4>Su área de sanitario</h4>
+      </li>
+      <li><a href="#">Pasar consulta</a></li>
+      <li><a href="#">Emitir tratamiento</a></li>
+      <li class="disabled"><h4>Su área de administrativo</h4></li>
+      <li><a href="#">Dar de alta a usuarios</a></li>
+      <li><a href="#">Dar citas</a></li>
+      <li class="disabled"><h4>Su área de sysadmin</h4></li>
+      <li><a href="#">Dar de alta a personal administrativo</a></li>
+      <li><a href="#">CRUD Modelos</a></li>
+      <li><a href="#">Acceso a LOGs</a></li>
+    </ul>
+  </div>
+  <div class="col-md-9 col-xs-8">
+  {% block user_content %}
+  {% endblock %}
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+  
+
+</script>
+{% endblock %}
